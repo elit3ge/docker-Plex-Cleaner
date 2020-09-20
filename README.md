@@ -1,13 +1,13 @@
 # Plex-Cleaner Docker
 
-[![Build Status](https://travis-ci.org/NitriKx/docker-Plex-Cleaner.svg?branch=master)](https://travis-ci.org/NitriKx/docker-Plex-Cleaner)
+[![Build Status](https://travis-ci.org/elit3ge/docker-Plex-Cleaner.svg?branch=master)](https://travis-ci.org/elit3ge/docker-Plex-Cleaner)
 
 Dokerized version of ngovil21/Plex-Cleaner
 
 ## First run 
 
 ```
-docker pull nitrikx/plex-cleaner
+docker pull elit3ge/docker-plex-cleaner
 docker run -ti -v /path/to/config/folder:/config nitrikx/plex-cleaner
 ```
 
@@ -21,10 +21,10 @@ docker run -ti -v /path/to/config/folder:/config nitrikx/plex-cleaner --test
 
 ```
 # Run every 4 hours
-docker run -ti -v /path/to/config/folder:/config -e "EXECUTION_CRON_EXPRESSION=0 */4 * * *" nitrikx/plex-cleaner
+docker run -ti -v /path/to/config/folder:/config -e "EXECUTION_CRON_EXPRESSION=0 */4 * * *" elit3ge/docker-plex-cleaner
 
 # Run once
-docker run -ti -v /path/to/config/folder:/config -e "EXECUTION_CRON_EXPRESSION=ONCE" nitrikx/plex-cleaner
+docker run -ti -v /path/to/config/folder:/config -e "EXECUTION_CRON_EXPRESSION=ONCE" elit3ge/docker-plex-cleaner
 ````
 
 ## plex_delete = false
@@ -32,7 +32,7 @@ docker run -ti -v /path/to/config/folder:/config -e "EXECUTION_CRON_EXPRESSION=O
 If you want to delete the file without passing by the Plex Web API, you need to mount your plex data directory:
 
 ```
-docker run -ti -v /path/to/config/folder:/config -v /path/to/plex/folder:/plexdata nitrikx/plex-cleaner
+docker run -ti -v /path/to/config/folder:/config -v /path/to/plex/folder:/plexdata elit3ge/docker-plex-cleaner
 ```
 
 and then adjust your configuration:
