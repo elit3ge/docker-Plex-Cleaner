@@ -8,13 +8,13 @@ Dokerized version of ngovil21/Plex-Cleaner
 
 ```
 docker pull elit3ge/docker-plex-cleaner
-docker run -ti -v /path/to/config/folder:/config nitrikx/plex-cleaner
+docker run -ti -v /path/to/config/folder:/config elit3ge/docker-plex-cleaner
 ```
 
 ## Testing 
 
 ```
-docker run -ti -v /path/to/config/folder:/config nitrikx/plex-cleaner --test
+docker run -ti -v /path/to/config/folder:/config elit3ge/docker-plex-cleaner --test
 ```
 
 ## Execution frequence
